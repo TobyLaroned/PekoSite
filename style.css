@@ -2,3 +2,13 @@
     font-family: 'Courier New', Courier, monospace;
     margin: auto;
 }
+
+h1.title_text {
+    margin: auto;
+}
+
+.main_container {
+    background-color: bisque;
+    height: 1000px;
+    width: 100%;
+}
