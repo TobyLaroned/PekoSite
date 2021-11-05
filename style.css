@@ -1,6 +1,8 @@
 .title_text {
     font-family: 'Courier New', Courier, monospace;
     margin: auto;
+    color: white;
+    padding: 50px;
 }
 
 h1.title_text {
@@ -8,7 +10,7 @@ h1.title_text {
 }
 
 .main_container {
-    background-color: bisque;
+    background-color: #1e1e1e;
     height: 1000px;
     width: 100%;
 }
