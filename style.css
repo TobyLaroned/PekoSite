@@ -1,16 +1,27 @@
-.title_text {
-    font-family: 'Courier New', Courier, monospace;
+.main_text {
+    font-family:Arial, Helvetica, sans-serif;
     margin: auto;
-    color: white;
-    padding: 50px;
+    color: rgb(230, 230, 230);
 }
 
-h1.title_text {
-    margin: auto;
+h1.main_text {
+    
 }
 
 .main_container {
+    
+}
+
+body {
     background-color: #1e1e1e;
-    height: 1000px;
-    width: 100%;
+    background-image: url(/media/img/Chateauwood.jpg);
+}
+
+.text_container {
+    background-color: #1e1e1e80;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    margin-top: ;
+    text-align: center;
 }
