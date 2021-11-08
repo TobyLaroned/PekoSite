@@ -7,6 +7,7 @@ Inspired by https://impomu.com/
 # To-Do
 - Fix github media hosting
 - Finalize overall style and layout
+- Different looks/versions maybe
 - Button audio function
 - Button animation function
 
