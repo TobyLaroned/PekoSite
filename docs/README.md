@@ -5,7 +5,6 @@ Project to practice and get back into web dev. <br />
 Inspired by https://impomu.com/
 
 # To-Do
-- Fix github media hosting
 - Finalize overall style and layout
 - Different looks/versions maybe
 - Button audio function
