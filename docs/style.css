@@ -13,15 +13,27 @@ h1.main_text {
 }
 
 body {
-    background-color: #1e1e1e;
-    background-image: url(assets/images/Chateauwood.jpg);
+    background-color: #2A7BCF;
+    /* background-image: url(assets/images/Chateauwood.jpg); */
 }
 
 .text_container {
     background-color: #1e1e1e80;
     width: 500px;
     height: 400px;
-    margin: auto;
-    margin-top: ;
+    margin: 0;
     text-align: center;
+    padding-top: 83px;
+    
+    /* Centers div vertically and horizontally. Not fully sure how transform works. */
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
+
+div .main_text {
+    margin-bottom: 20px;
+}
+
