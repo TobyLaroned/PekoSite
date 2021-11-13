@@ -5,12 +5,11 @@ Project to practice and get back into web dev. <br />
 Inspired by https://impomu.com/
 
 # To-Do
+- Button audio able to play audio as fast as possible
 - Finalize overall style and layout
-- Different looks/versions maybe
-- Button audio function
 - Button animation function
+- Different looks/versions maybe
 
 # Button Animation
-- Play audio
 - Display peko image in random location on screen
 - Short animation collection
