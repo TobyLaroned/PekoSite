@@ -1,6 +1,13 @@
 // Currently still uses global variables etc. Going to try to use callback functions in alpha branch.
 
-const pekolaAudio = document.getElementById("pekolaAudio");
+// Messy solution, see if can integrate into single array
+
+const itsmepekola = new Audio("assets/audio/pekola.mp3");
+const ogeyyRrat = new Audio("assets/audio/ogeyyRrat.mp3");
+const okPeko = new Audio("assets/audio/okPeko.mp3");
+var pekolaAudios = [itsmepekola, ogeyyRrat, okPeko];
+
+
 var count = 0;
 
 function htmlUpdater(htmlID, newContent) {
@@ -18,19 +25,31 @@ function pekoCounter() {
     htmlUpdater("sessionClicks", currentCount);    
 }
 
-// Will eventually play random peko clips out of array of like 3-5 random mp3 clips
-function pekoYell() {
-    playAudio(pekolaAudio);
+function getRandomPekoSound() {
+    const random = Math.floor(Math.random() * pekolaAudios.length);
+    var audioOut = pekolaAudios[random];
+    return audioOut;
 }
 
-function playAudio(audioFile) {
-    audioFile.play();
+// Play random peko audio clips out of pekolaAudios
+function pekoYell(audioInput) {
+    var audioOut = audioInput;
+    audioOut.play();
+}
+
+// RAPID FIRE AUDIO PLAYER TRIAL FIX - WIP from stackoverflow
+function pekoYellerTest(){
+    var audio = document.createElement("audio");
+    audio.src = getRandomPekoSound();
+    audio.addEventListener("ended", function () {
+        document.removeChild(this);
+    }, false);
+    audio.play();   
 }
 
 
 // Main button click function
 function pekoClick() {
-    pekoYell();
-    pekoCounter();
-    
+    pekoYell(getRandomPekoSound());
+    pekoCounter();    
 }
