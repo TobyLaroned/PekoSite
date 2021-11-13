@@ -37,3 +37,7 @@ div .main_text {
     margin-bottom: 20px;
 }
 
+#sessionClicks {
+    color: thistle;
+    font-size: 14pt;
+}
